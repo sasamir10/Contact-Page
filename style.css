@@ -26,19 +26,18 @@ body{
 .top{
     color: #FFFFFF;
     margin-top: 2rem;
-    width: 50%;
+    width: 40%;
     text-align: center;
 }
 
-.head{
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
+.top h1{
+    font-size: 3.5rem;
 }
 
-.para{
-    font-size: 2rem;
+.top p{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
 }
-
 
 .form-container{
     background-color: #FFFFFF33;
@@ -49,8 +48,6 @@ body{
     color: #FFFFFF;
     border-radius: 10px;
     width: 750px;
-
-    /* grid layout */
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
@@ -78,14 +75,23 @@ body{
     border: none;
     padding: 1rem;
     font-weight: 600;
+    background-color: #FFFFFF;
 }
+
+select{
+    appearance: none;
+    background-color: #FFFFFF;
+    background: url('resources/Expand_down.svg')  no-repeat right 10px center;
+    background-size: 1.5rem;
+}
+
 
 input::placeholder{
     color: #111729;
 }
 
 .label{
-    font-size: 0.875rem;
+    font-size: 0.85rem;
 }
 
 .message-box{
@@ -104,7 +110,7 @@ input::placeholder{
     cursor: pointer;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 375px) {
     body{
         height: auto;
     }
@@ -123,7 +129,7 @@ input::placeholder{
 
     .top{
         width: 100%;
-        margin: 2rem;
+        margin: 2rem 0;
     }
 
     .head{
